@@ -99,7 +99,6 @@ void loop()
  if (tag.substring(1) == "13 3E 9F 0D" || tag.substring(1)
   == "04 1D 87 62 7F 71 81" || tag.substring(1) == "03 02 5E 11")
   {
-    lcd.clear();
 
     digitalWrite(lock, HIGH);
     lcd.print("Access Allowed!!");
@@ -110,7 +109,7 @@ void loop()
   LOW);
     
     digitalWrite(serrure, LOW);
-    
+    lcd.clear();
     }
   
   else
@@ -133,5 +132,6 @@ void loop()
       delay(200);
     }
   }
-  delay(1000);
+  delay(500);
+  lcd.clear();
 }
