@@ -132,6 +132,6 @@ void loop()
       delay(200);
     }
   }
-  delay(500);
+  delay(100);
   lcd.clear();
 }
